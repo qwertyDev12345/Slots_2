@@ -164,6 +164,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.tyghdksj.gameworld
+    iPhone: com.tyghdksj.gameworld
   buildNumber:
     Standalone: 0
     VisionOS: 0

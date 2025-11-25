@@ -505,7 +505,7 @@ MonoBehaviour:
     _value: 12
     _color: {r: 0, g: 0, b: 0, a: 1}
     _colors: []
-    _sprite_0: {fileID: 21300000, guid: af478540a1c0b41c4bbbc29414dfc00d, type: 3}
+    _sprite_0: {fileID: 21300000, guid: 0a7fec7aea6509149af44c24edd45197, type: 3}
     _sprite_1: {fileID: 0}
     _sprite_2: {fileID: 0}
     _sprite_3: {fileID: 0}

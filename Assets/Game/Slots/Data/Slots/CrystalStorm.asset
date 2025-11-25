@@ -16,13 +16,13 @@ MonoBehaviour:
   - _type: 1
     _slotSprite: {fileID: 21300000, guid: ef0f1797e3c58d34fba9e20bf864d4c4, type: 3}
     _glowSprite: {fileID: 21300000, guid: 46567201d273d4163b68ee2a40b72d2c, type: 3}
-    _spawnPercent: 6
+    _spawnPercent: 3
     _inLineCount: 
     _inLinePrize: []
   - _type: 2
     _slotSprite: {fileID: 21300000, guid: 2af08e00081a9a44ba50f5b66721e14c, type: 3}
     _glowSprite: {fileID: 21300000, guid: 2d0dc13edec044f3987a15b6c2013b5d, type: 3}
-    _spawnPercent: 6
+    _spawnPercent: 3
     _inLineCount: 050000000400000003000000
     _inLinePrize:
     - 60
@@ -31,13 +31,13 @@ MonoBehaviour:
   - _type: 3
     _slotSprite: {fileID: 21300000, guid: 0a2d9a05c2c9a5b4797ce2c5375a455b, type: 3}
     _glowSprite: {fileID: 21300000, guid: 46567201d273d4163b68ee2a40b72d2c, type: 3}
-    _spawnPercent: 6
+    _spawnPercent: 3
     _inLineCount: 
     _inLinePrize: []
   - _type: 0
     _slotSprite: {fileID: 21300000, guid: addcfff94850941449eb8892d0358184, type: 3}
     _glowSprite: {fileID: 21300000, guid: 653b95dd023e944c7b859f43c0b8a900, type: 3}
-    _spawnPercent: 3
+    _spawnPercent: 1
     _inLineCount: 05000000040000000300000002000000
     _inLinePrize:
     - 60
@@ -47,7 +47,7 @@ MonoBehaviour:
   - _type: 0
     _slotSprite: {fileID: 21300000, guid: 3a1f9f2ade180ed4bbbea1236a2f9ee9, type: 3}
     _glowSprite: {fileID: 21300000, guid: 2d0dc13edec044f3987a15b6c2013b5d, type: 3}
-    _spawnPercent: 5
+    _spawnPercent: 2
     _inLineCount: 05000000040000000300000002000000
     _inLinePrize:
     - 36
@@ -57,7 +57,7 @@ MonoBehaviour:
   - _type: 0
     _slotSprite: {fileID: 21300000, guid: e206ab287b013624dbe2e576cba1e880, type: 3}
     _glowSprite: {fileID: 21300000, guid: 36655c55548444bdd917112adc217e02, type: 3}
-    _spawnPercent: 6
+    _spawnPercent: 2
     _inLineCount: 05000000040000000300000002000000
     _inLinePrize:
     - 30
@@ -67,7 +67,7 @@ MonoBehaviour:
   - _type: 0
     _slotSprite: {fileID: 21300000, guid: 5034c2a8f5aaf9f4893a437ac15ce85c, type: 3}
     _glowSprite: {fileID: 21300000, guid: 46567201d273d4163b68ee2a40b72d2c, type: 3}
-    _spawnPercent: 6
+    _spawnPercent: 2
     _inLineCount: 05000000040000000300000002000000
     _inLinePrize:
     - 30

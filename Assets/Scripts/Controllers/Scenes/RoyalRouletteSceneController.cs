@@ -239,6 +239,8 @@ namespace Controllers.Scenes
 
         private void OpenConfirmationPanel()
         {
+            Debug.Log("Press home btn");
+            
             _confirmationPanel.Show();
             _confirmationPanel.PressBtnAction += OnReceiveAnswerConfirmPanel;
         }

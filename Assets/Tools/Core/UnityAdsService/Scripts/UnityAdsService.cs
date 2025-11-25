@@ -12,12 +12,12 @@ namespace Tools.Core.UnityAdsService.Scripts
     public class UnityAdsService : MonoBehaviour, IUnityAdsInitializationListener
     {
         private const int ADLoadMaxCount = 2;
-
+        
         private const string RewardedVideoPlacementAndroid = "Rewarded_Android";
         private const string RewardedVideoPlacementIOS = "Rewarded_iOS";
 
         [SerializeField] private UnityAdsSettings _unityAdsSettings;
-
+        
         private string currentIdInitialize;
 
         private NetworkReachabilityService NetworkService => CoreContainer.Instance.NetworkReachabilityService;
@@ -50,22 +50,17 @@ namespace Tools.Core.UnityAdsService.Scripts
         public UnityAdsListener ShowRewardedAd()
         {
             if (!NetworkService.IsInternetAvailable || !IsAvailableShow)
-            {   
-                ErrorHandler.CreateViewWithDelayShowError();
-                return null;
-            }
-
-            if (AdsListenersPool == null || AdsListenersPool.Count == 0)
             {
-                Debug.LogWarning("UnityAds: pool empty, scheduling load & aborting show");
-                StartCoroutine(LoadRewardsCoroutine());
                 ErrorHandler.CreateViewWithDelayShowError();
+                
                 return null;
             }
-
+            
             var listener = AdsListenersPool.Dequeue();
-            StartCoroutine(ShowOnceWhenReady(listener));   // показываем ОДИН раз, когда готово
-            StartCoroutine(LoadRewardsCoroutine());        // пополняем пул заранее
+            Advertisement.Show(CurrentIdShow, listener);
+
+            StartCoroutine(LoadRewardsCoroutine());
+            StartCoroutine(PrepareShowAD(listener));
 
             return listener;
         }
@@ -75,6 +70,7 @@ namespace Tools.Core.UnityAdsService.Scripts
             if (!isAvailable)
             {
                 NetworkService.TryAddListener(AwaitInternetConnection);
+                
                 IsAvailableShow = false;
                 OnAvailableShow?.Invoke(false);
             }
@@ -82,7 +78,10 @@ namespace Tools.Core.UnityAdsService.Scripts
 
         private void InitializeAdvertisement(bool isAvailable = true)
         {
-            if (!isAvailable) return;
+            if (!isAvailable)
+            {
+                return;
+            }
 
             if (Advertisement.isSupported)
             {
@@ -99,16 +98,18 @@ namespace Tools.Core.UnityAdsService.Scripts
             {
                 AdsListenersPool.Clear();
             }
-
+            
             StartCoroutine(LoadRewardsAtNoInternetConnectionCoroutine());
+
             NetworkService.OnChanged -= AwaitInternetConnection;
         }
 
         private UnityAdsListener CreateUnityAdsListener()
         {
             var listener = new UnityAdsListener();
-            listener.Load(CurrentIdShow);           // внутри listener ставит IsAdsLoaded при готовности
+            listener.Load(CurrentIdShow);
             AdsListenersPool.Enqueue(listener);
+
             return listener;
         }
 
@@ -127,92 +128,68 @@ namespace Tools.Core.UnityAdsService.Scripts
         {
             yield return StartCoroutine(LoadRewardsCoroutine());
 
-            Debug.Log("All ADS loaded in pool");
+            Debug.Log($"All ADS loaded in pool");
+            
             IsInitialize = true;
             OnInitialize?.Invoke();
-
+            
             IsAvailableShow = true;
             OnAvailableShow?.Invoke(true);
         }
-
+        
         private IEnumerator LoadRewardsAtNoInternetConnectionCoroutine()
         {
             yield return StartCoroutine(LoadRewardsCoroutine());
 
-            Debug.Log("All ADS loaded in pool");
+            Debug.Log($"All ADS loaded in pool");
             IsAvailableShow = true;
             OnAvailableShow?.Invoke(true);
         }
-
+        
         private IEnumerator LoadRewardsCoroutine()
         {
             AdsListenersPool ??= new Queue<UnityAdsListener>();
 
-            // было <= (создавало ADLoadMaxCount+1 элементов). Должно быть <
-            while (AdsListenersPool.Count < ADLoadMaxCount)
+            while (AdsListenersPool.Count <= ADLoadMaxCount)
             {
                 var listener = CreateUnityAdsListener();
-                // ждём загрузку, чтобы потом Show не отдавал NOT_READY
+
                 yield return new WaitUntil(() => listener.IsAdsLoaded);
             }
+            yield break;
         }
 
-        /// <summary>
-        /// Показывает рекламу ОДИН раз, только когда она реально готова.
-        /// Без повторных Advertisement.Show и «ре-траев», чтобы не ловить ложные ошибки.
-        /// </summary>
-        private IEnumerator ShowOnceWhenReady(UnityAdsListener listener)
+        private IEnumerator PrepareShowAD(UnityAdsListener listener)
         {
-            // 1) ждём готовность (safety timeout)
-            const float loadTimeout = 6f;
-            float t = 0f;
-            while (!listener.IsAdsLoaded && t < loadTimeout)
-            {
-                t += Time.unscaledDeltaTime;
-                yield return null;
-            }
-
-            if (!listener.IsAdsLoaded)
-            {
-                Debug.LogWarning("UnityAds: timed out waiting for ad to load");
-                var f1 = ErrorHandler.CreateFaderView();
-                f1.ShowError();
-                yield break;
-            }
-
-            // 2) готовим UI и подписки
             var faderView = ErrorHandler.CreateFaderView();
+            
             listener.OnShowCompleteAds += faderView.CloseView;
             listener.OnShowFailedAds += faderView.ShowError;
 
-            // 3) один-единственный показ
-            Advertisement.Show(CurrentIdShow, listener);
-
-            // 4) ждём старт (без повторных Show)
-            const float startTimeout = 4f;
-            t = 0f;
-            while (!listener.IsAdsStarted && t < startTimeout)
-            {
-                t += Time.unscaledDeltaTime;
-                yield return null;
-            }
+            yield return new WaitForSeconds(1f);
 
             if (!listener.IsAdsStarted)
             {
-                Debug.LogWarning("UnityAds: show did not start in time");
-                faderView.ShowError();
-                yield break;
+                Advertisement.Show(CurrentIdShow, listener);
+                yield return new WaitForSeconds(2f);
+
+                if (!listener.IsAdsStarted)
+                {
+                    Debug.Log("ADS don't start, hide Fader");
+                    faderView.ShowError();
+                    yield break;
+                }
             }
         }
-
+        
         private void InitializePlatform()
         {
 #if UNITY_IOS
             currentIdInitialize = _unityAdsSettings.GameIdIos;
-            CurrentIdShow       = RewardedVideoPlacementIOS;
+            CurrentIdShow = RewardedVideoPlacementIOS;
 #elif UNITY_ANDROID
             currentIdInitialize = _unityAdsSettings.GameIdAndroid;
-            CurrentIdShow       = RewardedVideoPlacementAndroid;
+            CurrentIdShow = RewardedVideoPlacementAndroid;
 #endif
         }
     }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd85fb60d06a4795b895ad6a322f7b7, type: 3}
   m_Name: IAPSettingsData
   m_EditorClassIdentifier: 
-  _usDemoIAP: 0
+  _usDemoIAP: 1
   _products:
   - _name: Coins 5000
     _defaultPrice: 3.90$

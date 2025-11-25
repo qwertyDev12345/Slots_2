@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e40a91ca1f62420b9b578a65087afd7, type: 3}
+  m_Name: Default_4x3
+  m_EditorClassIdentifier: 
+  _fieldSize: {x: 4, y: 3}
+  _slots: {fileID: 11400000, guid: 0eea55ee8172440f3a6f1f753e4931d8, type: 2}
+  _styleData: {fileID: 11400000, guid: eb33968ea1c5940779c5882de065042f, type: 2}
+  _combinations:
+  - _columns:
+    - _cells: 010000
+    - _cells: 010000
+    - _cells: 010000
+    - _cells: 010000
+  - _columns:
+    - _cells: 000100
+    - _cells: 000100
+    - _cells: 000100
+    - _cells: 000100
+  - _columns:
+    - _cells: 000001
+    - _cells: 000001
+    - _cells: 000001
+    - _cells: 000001
+  - _columns:
+    - _cells: 010000
+    - _cells: 000100
+    - _cells: 000001
+    - _cells: 000100
+  - _columns:
+    - _cells: 000001
+    - _cells: 000100
+    - _cells: 010000
+    - _cells: 000100
+  - _columns:
+    - _cells: 000100
+    - _cells: 010000
+    - _cells: 010000
+    - _cells: 010000
+  - _columns:
+    - _cells: 000100
+    - _cells: 000001
+    - _cells: 000001
+    - _cells: 000001
+  - _columns:
+    - _cells: 010000
+    - _cells: 010000
+    - _cells: 000100
+    - _cells: 000001
+  - _columns:
+    - _cells: 000001
+    - _cells: 000001
+    - _cells: 000100
+    - _cells: 010000
+  - _columns:
+    - _cells: 000100
+    - _cells: 000001
+    - _cells: 000100
+    - _cells: 010000
+  - _columns:
+    - _cells: 000100
+    - _cells: 010000
+    - _cells: 000100
+    - _cells: 010000
+  - _columns:
+    - _cells: 000100
+    - _cells: 000001
+    - _cells: 000100
+    - _cells: 000001
+  - _columns:
+    - _cells: 010000
+    - _cells: 000100
+    - _cells: 010000
+    - _cells: 000100
+  - _columns:
+    - _cells: 000001
+    - _cells: 000100
+    - _cells: 000001
+    - _cells: 000100
+  - _columns:
+    - _cells: 010000
+    - _cells: 000100
+    - _cells: 000100
+    - _cells: 000001

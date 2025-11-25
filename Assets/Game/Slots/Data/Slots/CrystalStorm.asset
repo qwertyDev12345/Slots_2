@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0ba4c28a2ab4079bc8737ba037f066, type: 3}
+  m_Name: CrystalStorm
+  m_EditorClassIdentifier: 
+  _slots:
+  - _type: 1
+    _slotSprite: {fileID: 21300000, guid: ef0f1797e3c58d34fba9e20bf864d4c4, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 46567201d273d4163b68ee2a40b72d2c, type: 3}
+    _spawnPercent: 6
+    _inLineCount: 
+    _inLinePrize: []
+  - _type: 2
+    _slotSprite: {fileID: 21300000, guid: 2af08e00081a9a44ba50f5b66721e14c, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 2d0dc13edec044f3987a15b6c2013b5d, type: 3}
+    _spawnPercent: 6
+    _inLineCount: 050000000400000003000000
+    _inLinePrize:
+    - 60
+    - 20
+    - 2
+  - _type: 3
+    _slotSprite: {fileID: 21300000, guid: 0a2d9a05c2c9a5b4797ce2c5375a455b, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 46567201d273d4163b68ee2a40b72d2c, type: 3}
+    _spawnPercent: 6
+    _inLineCount: 
+    _inLinePrize: []
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: addcfff94850941449eb8892d0358184, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 653b95dd023e944c7b859f43c0b8a900, type: 3}
+    _spawnPercent: 3
+    _inLineCount: 05000000040000000300000002000000
+    _inLinePrize:
+    - 60
+    - 25
+    - 10
+    - 0.5
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: 3a1f9f2ade180ed4bbbea1236a2f9ee9, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 2d0dc13edec044f3987a15b6c2013b5d, type: 3}
+    _spawnPercent: 5
+    _inLineCount: 05000000040000000300000002000000
+    _inLinePrize:
+    - 36
+    - 15
+    - 6
+    - 0.5
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: e206ab287b013624dbe2e576cba1e880, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 36655c55548444bdd917112adc217e02, type: 3}
+    _spawnPercent: 6
+    _inLineCount: 05000000040000000300000002000000
+    _inLinePrize:
+    - 30
+    - 12
+    - 5
+    - 0.5
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: 5034c2a8f5aaf9f4893a437ac15ce85c, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 46567201d273d4163b68ee2a40b72d2c, type: 3}
+    _spawnPercent: 6
+    _inLineCount: 05000000040000000300000002000000
+    _inLinePrize:
+    - 30
+    - 12
+    - 5
+    - 0.5
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: 94c05291d73a423498fd20df6d296e4e, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 2d0dc13edec044f3987a15b6c2013b5d, type: 3}
+    _spawnPercent: 10
+    _inLineCount: 050000000400000003000000
+    _inLinePrize:
+    - 18
+    - 5
+    - 0.2
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: 741fa2b6e281d114eb75ce05c546b954, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 1b43677c6c942467d872a262da5a595c, type: 3}
+    _spawnPercent: 10
+    _inLineCount: 050000000400000003000000
+    _inLinePrize:
+    - 15
+    - 4
+    - 0.2
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: bb598ef82e405764c9d415af9cccab59, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 3843a048a275640fb8d9d5460692e703, type: 3}
+    _spawnPercent: 14
+    _inLineCount: 050000000400000003000000
+    _inLinePrize:
+    - 10
+    - 2.5
+    - 0.2
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: ccceea23d8190ac4f93c8fb99d50f240, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 653b95dd023e944c7b859f43c0b8a900, type: 3}
+    _spawnPercent: 14
+    _inLineCount: 050000000400000003000000
+    _inLinePrize:
+    - 10
+    - 2.5
+    - 0.2
+  - _type: 0
+    _slotSprite: {fileID: 21300000, guid: e7144f43bbb5aa24090ca8258de944c0, type: 3}
+    _glowSprite: {fileID: 21300000, guid: 2d0dc13edec044f3987a15b6c2013b5d, type: 3}
+    _spawnPercent: 14
+    _inLineCount: 050000000400000003000000
+    _inLinePrize:
+    - 10
+    - 2.5
+    - 0.2

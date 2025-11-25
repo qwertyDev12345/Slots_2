@@ -1,0 +1,646 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d7f463a490946eb8c55ba7b16500b8, type: 3}
+  m_Name: Vertical_DefaultStyles
+  m_EditorClassIdentifier: 
+  _groups:
+  - FreeSpins_Header_Font
+  - FreeSpins_Count_Font
+  - Money_Count_Font
+  - Multiplier_Timer_Font
+  - Win_Header_Font
+  - Win_Count_Font
+  - TotalBet_Header_Font
+  - TotalBet_Count_Font
+  - Line
+  - Timer_2X
+  - Timer_2X_Panel
+  - Field_3x3
+  - Field_4x3
+  - Field_5x3
+  - Background
+  - Header
+  - Footer
+  - Auto_Spin
+  - Max_Bet
+  - Spin_Button
+  - Button_Home
+  - Button_Info
+  - Plus_Bet
+  - Minus_Bet
+  - Icon_Coins
+  - Icon_Pause
+  - Icon_Play
+  - Balance_Panel
+  - FreeSpins_Panel
+  - TotalBet_Panel
+  - Win_Balance_Panel
+  - InfoPanel_Horizontal
+  - InfoPanel_Vertical
+  - InfoPanel_Close_Button
+  - InfoPanel_Header_Font
+  - InfoPanel_ScrollBar_Back
+  - InfoPanel_ScrollBar_Front
+  - InfoPanel_Paginator_Back
+  - InfoPanel_Paginator_Front
+  - InfoPanel_Combination_Background
+  - InfoPanel_Combination_Active_Cell
+  - InfoPanel_Combination_Disabled_Cell
+  - InfoPanel_SlotInfo_Header_Font
+  - InfoPanel_SlotInfo_Value_Font
+  - InfoPanel_SlotInfo_Scale_Font
+  - Bonuses_BG
+  - Letter_M
+  - Letter_U
+  - Letter_L
+  - Letter_T
+  - Letter_I
+  - Letter_P
+  - Letter_E
+  - Letter_R
+  - Letter_F
+  - Letter_S
+  - Letter_N
+  - Letter_2X
+  - Number_2
+  - Number_20
+  - Number_200
+  _sets:
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 16
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 16
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 19
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 14
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 19
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 16
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 4
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors:
+    - {r: 0.09019608, g: 0.76862746, b: 0.8745098, a: 1}
+    - {r: 0.99607843, g: 0.45882353, b: 0.78039217, a: 1}
+    - {r: 1, g: 0.41568628, b: 0.07058824, a: 1}
+    - {r: 0, g: 0.9882353, b: 0.7490196, a: 1}
+    - {r: 0.94509804, g: 0.61960787, b: 0.14901961, a: 1}
+    - {r: 0.08235294, g: 0.654902, b: 0.9019608, a: 1}
+    - {r: 0.9882353, g: 0.27058825, b: 0.67058825, a: 1}
+    - {r: 0.9529412, g: 0.17254902, b: 0.15294118, a: 1}
+    - {r: 0.047058824, g: 0.84705883, b: 0.58431375, a: 1}
+    - {r: 0.93333334, g: 0.7137255, b: 0.05490196, a: 1}
+    - {r: 0.07450981, g: 0.59607846, b: 0.9882353, a: 1}
+    - {r: 0.7647059, g: 0.34901962, b: 1, a: 1}
+    - {r: 0.89411765, g: 0.28235295, b: 0.92156863, a: 1}
+    - {r: 0.03137255, g: 0.7607843, b: 0.1254902, a: 1}
+    - {r: 0.7607843, g: 0.7490196, b: 0.03137255, a: 1}
+    - {r: 0.3137255, g: 0.5254902, b: 1, a: 1}
+    - {r: 0.47058824, g: 0.29803923, b: 1, a: 1}
+    - {r: 0.8666667, g: 0.078431375, b: 0.6901961, a: 1}
+    - {r: 0.039215688, g: 0.59607846, b: 0.27058825, a: 1}
+    - {r: 0.5803922, g: 0.627451, b: 0.015686275, a: 1}
+    _sprite_0: {fileID: 21300000, guid: 15775543f89734750860dcf0d755be38, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 291e6e29ac55249a78b313ef06bca5b9, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 0ef5112047fd8419a8eb237beea25e48, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: e6e8e6b5debc54751a5529a2784d3c75, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 8f70d98c4985043bb9f3cf4f3a31e7ba, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 7e7397baf566a465c929574793e7e479, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 9f41e7709e6d94d9abf0e4e5b1db4838, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 0}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 0fecbcce17e304fcdbff214fc926f162, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 0
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: b53b6b0142c5441b1a4e79308ef995d6, type: 3}
+    _sprite_1: {fileID: 21300000, guid: 7db5135d8928d45e68350d0fdf11dd62, type: 3}
+    _sprite_2: {fileID: 21300000, guid: 0ece54aa5790d4a5a872c9ee59a57880, type: 3}
+    _sprite_3: {fileID: 21300000, guid: 4fc6bb4d6e369405d9470fcb6f0d1cf4, type: 3}
+  - _type: 1
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 1177333980e6049daa841897186a18b3, type: 3}
+    _sprite_1: {fileID: 21300000, guid: 6b63079124da941569e0b942247a2a77, type: 3}
+    _sprite_2: {fileID: 21300000, guid: 872b811daa45341158935948856b7ac7, type: 3}
+    _sprite_3: {fileID: 0}
+  - _type: 1
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: a13e99eb70b294df8afd1f11131277d9, type: 3}
+    _sprite_1: {fileID: 21300000, guid: 07c32b443e9474f8fb61f17309fb17b8, type: 3}
+    _sprite_2: {fileID: 21300000, guid: 4f9ad5e72e02743feae50f6fdb700f7a, type: 3}
+    _sprite_3: {fileID: 0}
+  - _type: 1
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 7ea1b06cd1ae044c18cf42d413255b73, type: 3}
+    _sprite_1: {fileID: 21300000, guid: 2fe422d8e01c2427692b12ac6f32febe, type: 3}
+    _sprite_2: {fileID: 21300000, guid: 111b465b8219048eba7a9356a2be80e1, type: 3}
+    _sprite_3: {fileID: 0}
+  - _type: 1
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 3c08b0d90e5f146e884ea4870a7177fb, type: 3}
+    _sprite_1: {fileID: 21300000, guid: 9b7aae682f0e44f47b9a79d8fe38b7d3, type: 3}
+    _sprite_2: {fileID: 21300000, guid: 7c34acdc0d2174d88a03303aa9642180, type: 3}
+    _sprite_3: {fileID: 0}
+  - _type: 1
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 5b7fe9a3b4d484d74aed3d248243bfeb, type: 3}
+    _sprite_1: {fileID: 21300000, guid: 5ec6e8bc834444ea8b285aed1e45e8ba, type: 3}
+    _sprite_2: {fileID: 21300000, guid: b6e3667bdef24454789c035335088ef6, type: 3}
+    _sprite_3: {fileID: 0}
+  - _type: 1
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 944152f6137d1403e96026cea11b5f0d, type: 3}
+    _sprite_1: {fileID: 21300000, guid: 0e3660ca4b426405da50951faaa79bcf, type: 3}
+    _sprite_2: {fileID: 21300000, guid: 9d340aeb4dd0c4fb08dfc522872167eb, type: 3}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 41a27077f76814f00933b529e7915350, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: f0270a1477e18444da2e6a17320ad4e6, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 85274c025a8f74a42a23eba5b08a966a, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 97026e6cb212c46a4a213d364a51fdf3, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 4916b0e61085e4f119f009b6dd27a740, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 8ea45860cf1fd4a4a8551239d38f39ba, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: a045428baaf7b46349a8b92ea2091806, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: b379f963e0ebc4140b9920cc936440e9, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 89e52118846ca4a6b8caafadc7a2cabe, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 5942e51ba08d94314b9e8949bd59466c, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 18
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: af478540a1c0b41c4bbbc29414dfc00d, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 091c73935e2684dc584dbcf630aa0bac, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 36898ec8a50a84bffae54034b156fda4, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: b7a1ec0d70b9f4f66b653ce2a4a8db51, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 3c04ad7dfc8d648b783ef9678468653f, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 13
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 766cd9b3e36e94ab2a3cc641d2a7d8b2, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 13
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: ffbe0110e52614a8487155d98eb574e6, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 13
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 766cd9b3e36e94ab2a3cc641d2a7d8b2, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 13
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: af478540a1c0b41c4bbbc29414dfc00d, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 13
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: af478540a1c0b41c4bbbc29414dfc00d, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 3
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 13
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: af478540a1c0b41c4bbbc29414dfc00d, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _value: 12
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: af478540a1c0b41c4bbbc29414dfc00d, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 99615fdf9fc914a749f13ba9f5ce1e44, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 8e62e04176ce64b4eb67d3a70424cb63, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: e8bf6cf94717c49c491c4ec9a189b5bf, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: e42fdecd5607b4d00ba0545c15e8bab9, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: d1205a74cc34047a8bd6ba78cb047ccb, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: d0ef41828c9e549c78181bc449b9c94b, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 10cd9382fcd254781a3ec9b29268da2b, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 232e4873e66a34d3bae8879716fd08a5, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 3dec8a1fe368341f080b23dd41b9be09, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: c1fd03c0c875d4e7ea7c5ed3b962bb4c, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 38f773ad86430406da1b4ac48be25b25, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 00c55a75e38714509919b741f44db7b7, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: a44ce58e9d2204636bb89682ea82950c, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: 509f05357124143cc8c85a503a2d65d2, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}
+  - _type: 2
+    _font: {fileID: 0}
+    _value: 0
+    _color: {r: 1, g: 1, b: 1, a: 1}
+    _colors: []
+    _sprite_0: {fileID: 21300000, guid: c53ad2995998a48aa95376d6dd41e0be, type: 3}
+    _sprite_1: {fileID: 0}
+    _sprite_2: {fileID: 0}
+    _sprite_3: {fileID: 0}

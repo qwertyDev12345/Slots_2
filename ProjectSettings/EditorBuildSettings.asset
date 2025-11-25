@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/InitScene.unity
+    guid: c7bb6ec5b5e59de4086d274a47b0183e
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: e1ade8588060c5944b4b15fd283055f8
+  - enabled: 1
+    path: Assets/Scenes/CrystalStormScene.unity
+    guid: b99f045337a84a64bba59541c00e5d13
+  - enabled: 1
+    path: Assets/Scenes/TurboSlotScene.unity
+    guid: 18124cf54209fc2438863f9995422083
+  - enabled: 1
+    path: Assets/Scenes/StelarWheelScene.unity
+    guid: 2d454285b25080e47a38b031bd46e8c6
+  - enabled: 1
+    path: Assets/Scenes/DipeDiveScene.unity
+    guid: 3df63fbba03bc8742a6e4a4ea8d326fc
+  - enabled: 1
+    path: Assets/Scenes/ReactorRunScene.unity
+    guid: 75a64a6a9e7ee3e4eac5c5e13aa23fd1
   m_configObjects: {}

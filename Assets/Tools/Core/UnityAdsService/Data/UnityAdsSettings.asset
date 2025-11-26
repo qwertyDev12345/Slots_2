@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61e6066e412e40168fb95b346d37e5dc, type: 3}
   m_Name: UnityAdsSettings
   m_EditorClassIdentifier: 
-  GameIdAndroid: 5538750
-  GameIdIos: 5538751
+  GameIdAndroid: 5991939
+  GameIdIos: 5991938
   TestMode: 1
